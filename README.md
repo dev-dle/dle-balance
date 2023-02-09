@@ -40,17 +40,6 @@
    }
    ```
 
-3. В `engine/modules/main.php` найти и вставить ПОСЛЕ:
-   ```php
-   $tpl->set ( '{info}',  $tpl->result['info'] );
-   ```
-   Следующий код:
-   ```php
-   if (isset($ccdn)) {
-       $tpl->result['content'] .= $ccdn->getActualizeJS();
-   }
-   ```
-
 Обновление модуля
 ----
 
